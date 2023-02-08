@@ -55,17 +55,27 @@ a{
     border: 1px solid rgb(199, 173, 230);
 }
 
+#background{
+    width: 100vw;
+    height: 100vh;
+    /* background-image: url("https://media.istockphoto.com/photos/light-blue-paper-texture-background-picture-id1303637923?b=1&k=20&m=1303637923&s=612x612&w=0&h=iwLb9ARrRFooPmT5Bp2Gq2iX22AbVGIVpRrJFd2Bvl4="); */
+    /* object-fit: cover; */
+    margin: 0px;
+    /* background-image: url("https://www.designhill.com/design-blog/wp-content/uploads/2017/08/retail-store-min.jpg"); */
+    background-image: url("https://www.rd.com/wp-content/uploads/2017/09/00_groceryshopping_This-is-the-Absolute-Worst-Day-to-Shop-for-Your-Thanksgiving-Groceries_299082896_wavebreakmedia.jpg");
+    background-size: cover;
+    /* opacity: 0.9; */
+}
+
 #container{
-    /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbfKfIIDSeBdiNOVWsYHY6d8xJN5sChCc6AwPKD4zJ9w&s);
-    object-fit:fill;
-    opacity: 0.9; */
+    
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 50vw;
     height: 80vh;
     margin: auto;
-    margin-top: 15vh;
+    padding-top: 15vh;
     justify-content: space-between;
 }
 
@@ -104,6 +114,17 @@ a{
     flex-direction: row;
 }
 
+.dashboard-buttons{
+    width: 142px;
+    height: 38px;
+    background-color: #2e9bd1;
+    border: 1px solid #2e9bd1;
+    color: white;
+    margin-left: 10%;
+    margin-top: 0px;
+    border-radius: 20px;
+}
+
 .inner-div{
     width: 400px;
     height: 300px;
@@ -122,34 +143,62 @@ h3{
 }
 
 #new-product{
+    display: flex;
     width: 100vw;
     height:100vh;
     background-color: #81f7f7;
+    /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgo9L4WYLdW0M8PsrcwbAbYV5_vtqQgpSBQA&usqp=CAU");
+    background-size: cover; */
 }
 
 #update-number{
+    display: flex;
+    /* flex-direction: row-reverse; */
     width: 100vw;
     height:100vh;
     background-color: #83e5e5;
+    /* background-image: url("https://indian-retailer.s3.ap-south-1.amazonaws.com/s3fs-public/2020-08/kirana.jpg");
+    background-size: cover; */
+    /* opacity: 0.6; */
 }
 
 #update-price{
     width: 100vw;
     height:100vh;
     background-color: #81f7f7;
+    /* background-image: url("https://www.rd.com/wp-content/uploads/2017/09/00_groceryshopping_This-is-the-Absolute-Worst-Day-to-Shop-for-Your-Thanksgiving-Groceries_299082896_wavebreakmedia.jpg");
+    background-size: cover; */
+    display: flex;
 }
 
 #stock{
     width: 100vw;
     height:100vh;
     background-color: #83e5e5;
+    padding: 10vh;
 }
 
-#unavailable{
+#stock-div{
+    width: 70vw;
+    height: 50vh;
+    margin: 0px 10vw;
+    background-color: aliceblue;
+}
+
+#stock-para{
+    text-align: center;
+    padding-top: 20px;
+}
+
+#stock-button{
+    margin-top: 20px;
+    margin-left: 43%;
+}
+/* #unavailable{
     width: 100vw;
     height:100vh;
     background-color: #81f7f7;
-}
+} */
 
 #form{
     display: inline-block;
@@ -167,16 +216,19 @@ h3{
 input{
     width: 344px;
     height: 48px;
+    border-radius: 10px;
     display: block;
     margin-bottom: 14px;
-    margin-left: 39vw;   
+    margin-left: 16vw;   
     box-sizing: border-box;
+    padding-left: 10px;
 }
 
 h2{
-    text-align: center;
-    padding-top: 15vh;
+    /* text-align: center; */
+    padding-top: 20vh;
     margin-top: 0px;
+    margin-left: 17vw;
 }
 
 .submit{
@@ -186,17 +238,25 @@ h2{
     width: 142px;
     height: 38px;
     border-radius: 23px;
-    margin-left: 45vw;
+    margin-left: 20vw;
     margin-bottom: 3vh;
     margin-top: 2vh;
 }
 
 .fixed{
     position: absolute;
-    /* position: fixed;
-  top: 0;
-  left: 0; */
     margin-left: 5vw;
+}
+
+.image{
+    margin-top: 20vh;
+    margin-left: 10vw;
+}
+
+
+
+.reverse-img{
+    margin-left: 15vw;
 }
 
 @media screen and (max-width:600px){
@@ -204,17 +264,41 @@ h2{
         margin-left: auto;
         margin-right: auto;
         width: 90vw;
+        
     }
     .submit{
         margin-left: 10vw;
         margin-right: auto;
+        display: block;
     }
     #container{
-        height: 120vh;
+        height: auto;
         margin-top: 5vh;
     }
     #dashboard{
         display: flex;
         flex-direction: column;
+        height: auto;
+    }
+    .inner-div{
+        display: block;
+        padding: 10px;
+        text-align: center;
+        width: auto;
+        height: auto;
+    }
+    .dashboard-buttons{
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .image{
+        display: none;
+    }
+    h2{
+        text-align: center;
+    }
+    #background{
+        margin-top: 0px;
     }
 }
