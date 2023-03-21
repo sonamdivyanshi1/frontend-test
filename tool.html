@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-tool.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@900&family=PT+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+    <title>tool</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="nav-div" style="background-color: #1F2937;
+    color: white;
+    height: 60px;
+    padding-top: 8px;
+    ">
+            <a class="logo" href="index3.html">
+                <i class="fa-solid fa-store fa-2xl" style="color:orangered; margin-top:20px"></i>
+            </a>
+             <button class="button" id="button-mobile"><a href="#table" style="color:orangered;">Login</a></button>
+            <div id="nav-elements">
+                
+                <a class="nav-element" href="index3.html">Home</a>
+                <a class="nav-element" href="#table">Show table</a>
+                <a class="nav-element" href="">Login</a>
+
+            </div>
+
+            <!-- <select> 
+                <option value="" selected="selected">Select</option> 
+                <option value="">About</option>
+                <option value="">Pricing</option>
+                <option value="">Contact Us</option> 
+                <option value="">Login</option>
+                <option value="">Contact Us</option>
+            </select> -->
+        </div>
+        </nav>
+        
+    <div id="page">
+        <section class="tool">
+            <!-- <div class="selectBtnContainer">
+                <button onclick="setActive(0)" class="selectBtn btn active"
+                    style="border-top-left-radius: 10px;">SellPrice
+                    Each</button>
+                <button onclick="setActive(1)" class="selectBtn btn">SellPrice Product</button>
+                <button onclick="setActive(2)" class="selectBtn btn">SellPrice individual</button>
+
+            </div> -->
+
+
+            <div id="sellPriceEachContainer" class="toolContainer active">
+                <div class="formContainer">
+                    <h1 style="color:orangered; text-decoration:underline;">ADD A NEW ITEM</h1>
+                    <hr>
+                    <form id="sellPriceEachform" method="post">
+                            <div style="margin-bottom: 8px; ">
+                                <label for="sellEachitemName">Item Name</label>
+                                <input type="text" id="sellEachitemName" name="itemName">
+                            </div>
+                            <div style="margin-bottom: 16px;">
+                                <label for="sellEachitemPrice">Item Cost Price</label>
+                                <input type="number" id="sellEachitemPrice" name="itemPrice" required>
+                            </div>
+                            <div style="margin-bottom: 8px; ">
+                                <label for="sellEachitemSP">Minimum Selling Price</label>
+                                <input type="number" id="sellEachitemSP" name="itemSP" required>
+                            </div>
+                            <div style="margin-bottom: 16px;">
+                                <label for="sellEachitemNum">Number of items</label>
+                                <input type="number" id="sellEachitemNum" name="itemNumber" required>
+                            </div>
+                        <div style="width: fit-content; margin-right: auto; margin-left:auto;">
+                            <button type="submit" class="button" id="sellEachSubmitBtn">Add Item</button>
+                        </div>
+                        <button class="button"><a href="#table" style="color:orangered;">Show table</a></button>
+                    </form>
+                </div>
+            </section>
+
+                <div id="table" class="tableContainer">
+                    <div class="tableBox">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Item Name</th>
+                                    <th>Item Cost Price</th>
+                                    <th>Item Selling Price</th>
+                                    <th>Item Number</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody id="sellEachtable">
+
+                            </tbody>
+
+                            <tr style="height: 30px;">
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+
+                        </table>
+                        <!-- <button class="button">Total Investment</button> -->
+                    </div>
+                </div>
+        
+    </div> 
+    <section id="last">
+            <p>Copyright &#169 Sonam Divyanshi</p>
+        </section>
+    
+
+</body>
+<script src="frontend.js"></script>
+<script src="https://kit.fontawesome.com/2dac633212.js" crossorigin="anonymous"></script>
+
+</html>
